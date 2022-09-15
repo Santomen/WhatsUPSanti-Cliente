@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane fx:id="PANEChat" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="406.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.whatsapp_cliente.ChatController">
+    <children>
+        <ScrollPane fx:id="SCChat" layoutX="-1.0" layoutY="42.0" prefHeight="222.0" prefWidth="406.0">
+            <content>
+                <VBox fx:id="VB" prefHeight="215.0" prefWidth="393.0" />
+            </content>
+        </ScrollPane>
+        <Label fx:id="lblChat" layoutX="115.0" layoutY="6.0" prefHeight="31.0" prefWidth="286.0" text="Persona" />
+        <Button fx:id="btnPlano" layoutX="-1.0" layoutY="280.0" mnemonicParsing="false" onAction="#send_serverPlano" prefHeight="25.0" prefWidth="80.0" text="Texto Plano" />
+        <Button fx:id="btnSimetrico" layoutX="79.0" layoutY="280.0" mnemonicParsing="false" onAction="#send_serverSimetrico" prefHeight="25.0" prefWidth="108.0" text="Cifrado simetrico" />
+        <Button fx:id="btnAsimetrico" layoutX="187.0" layoutY="280.0" mnemonicParsing="false" onAction="#send_serverAsimetrico" text="Cifrado asimetrico" />
+        <TextField fx:id="txfMensaje" layoutX="299.0" layoutY="280.0" prefHeight="25.0" prefWidth="108.0" />
+        <Button fx:id="btnRegresar" layoutX="3.0" layoutY="1.0" mnemonicParsing="false" onAction="#Regresar" prefHeight="39.0" prefWidth="90.0" text="Regresar" />
+    </children>
+</Pane>
